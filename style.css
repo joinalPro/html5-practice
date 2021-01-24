@@ -5,9 +5,11 @@ nav{
     font-size: 25px;
    
 }
+nav > ul > li{
+    float: left;
+}
 nav li{
     list-style: none;
-    float: left;
     padding: 10px;
   
    
@@ -20,4 +22,13 @@ nav a {
 }
 nav li:hover{
     background-color: darkgray;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    padding: 0%;
+}
+nav > ul > li:hover > ul{
+    display: block;
 }
